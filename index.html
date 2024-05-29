@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="output.css">
+    <title>Home</title>
+</head>
+<body>
+
+<header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="container mx-auto flex items-center justify-between py-4 px-6">
+      <a href="#" class="flex items-center space-x-2">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="h-6 w-6 text-[#2C3E50]"
+        >
+          <path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+          <polyline points="9 22 9 12 15 12 15 22"></polyline>
+        </svg>
+        <span class="text-xl font-bold text-[#2C3E50]">Acme Construction</span>
+      </a>
+      <nav class="hidden md:flex items-center space-x-6">
+        <a href="#" class="text-[#2C3E50] hover:text-gray-600 transition-colors">
+          Accueil
+        </a>
+        <a href="#" class="text-[#2C3E50] hover:text-gray-600 transition-colors">
+          Services
+        </a>
+        <a href="#" class="text-[#2C3E50] hover:text-gray-600 transition-colors">
+          À propos
+        </a>
+        <a href="#" class="text-[#2C3E50] hover:text-gray-600 transition-colors">
+          Contact
+        </a>
+      </nav>
+      <button class="md:hidden bg-gray-100 hover:bg-gray-200 text-[#2C3E50] rounded-md p-2 transition-colors">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="h-6 w-6"
+        >
+          <line x1="4" x2="20" y1="12" y2="12"></line>
+          <line x1="4" x2="20" y1="6" y2="6"></line>
+          <line x1="4" x2="20" y1="18" y2="18"></line>
+        </svg>
+      </button>
+    </div>
+  </header>
+  <main>
+    <section
+      class="relative h-[80vh] bg-cover bg-center bg-no-repeat"
+      style="background-image: url(&quot;/placeholder.svg&quot;); transition: background-image 5s ease-in-out 0s;"
+    >
+      <div class="absolute inset-0 bg-[#2C3E50] bg-opacity-60 flex items-center justify-center">
+        <div class="text-center space-y-6 max-w-2xl">
+          <h1 class="text-4xl font-bold text-white">Construisez votre rêve avec Acme</h1>
+          <p class="text-gray-200 text-lg">
+            Chez Acme Construction, nous sommes passionnés par la création d'espaces uniques qui reflètent votre
+            vision. Laissez-nous vous aider à concrétiser vos projets les plus ambitieux.
+          </p>
+          <div class="flex space-x-4">
+            <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 px-4 py-2 bg-[#2C3E50] hover:bg-[#2C3E50]/80 text-white">
+              Découvrir nos services
+            </button>
+            <button class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 px-4 py-2 bg-[#FFD700] hover:bg-[#FFD700]/80 text-[#2C3E50] font-bold">
+              Contactez-nous
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="gallery" class="py-20">
+      <div class="container mx-auto px-6">
+        <div class="text-center space-y-4 mb-12">
+          <h2 class="text-3xl font-bold text-[#2C3E50]">Notre Travail</h2>
+          <p class="text-gray-500 text-lg">Découvrez quelques-uns de nos projets récents.</p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+          <img
+            src="/placeholder.svg"
+            width="300"
+            height="300"
+            alt="Salon"
+            class="rounded-lg shadow-lg transition-all duration-500 ease-in-out transform hover:-translate-y-2 hover:scale-105"
+            style="aspect-ratio: 300 / 300; object-fit: cover;"
+          />
+          <img
+            src="/placeholder.svg"
+            width="300"
+            height="300"
+            alt="Cuisine"
+            class="rounded-lg shadow-lg transition-all duration-500 ease-in-out transform hover:-translate-y-2 hover:scale-105"
+            style="aspect-ratio: 300 / 300; object-fit: cover;"
+          />
+          <img
+            src="/placeholder.svg"
+            width="300"
+            height="300"
+            alt="Chambre"
+            class="rounded-lg shadow-lg transition-all duration-500 ease-in-out transform hover:-translate-y-2 hover:scale-105"
+            style="aspect-ratio: 300 / 300; object-fit: cover;"
+          />
+          <img
+            src="/placeholder.svg"
+            width="300"
+            height="300"
+            alt="Salle de bain"
+            class="rounded-lg shadow-lg transition-all duration-500 ease-in-out transform hover:-translate-y-2 hover:scale-105"
+            style="aspect-ratio: 300 / 300; object-fit: cover;"
+          />
+          <img
+            src="/placeholder.svg"
+            width="300"
+            height="300"
+            alt="Salon 2"
+            class="rounded-lg shadow-lg transition-all duration-500 ease-in-out transform hover:-translate-y-2 hover:scale-105"
+            style="aspect-ratio: 300 / 300; object-fit: cover;"
+          />
+          <img
+            src="/placeholder.svg"
+            width="300"
+            height="300"
+            alt="Cuisine 2"
+            class="rounded-lg shadow-lg transition-all duration-500 ease-in-out transform hover:-translate-y-2 hover:scale-105"
+            style="aspect-ratio: 300 / 300; object-fit: cover;"
+          />
+          <img
+            src="/placeholder.svg"
+            width="300"
+            height="300"
+            alt="Chambre 2"
+            class="rounded-lg shadow-lg transition-all duration-500 ease-in-out transform hover:-translate-y-2 hover:scale-105"
+            style="aspect-ratio: 300 / 300; object-fit: cover;"
+          />
+          <img
+            src="/placeholder.svg"
+            width="300"
+            height="300"
+            alt="Salle de bain 2"
+            class="rounded-lg shadow-lg transition-all duration-500 ease-in-out transform hover:-translate-y-2 hover:scale-105"
+            style="aspect-ratio: 300 / 300; object-fit: cover;"
+          />
+          <img
+            src="/placeholder.svg"
+            width="300"
+            height="300"
+            alt="Salon 3"
+            class="rounded-lg shadow-lg transition-all duration-500 ease-in-out transform hover:-translate-y-2 hover:scale-105"
+            style="aspect-ratio: 300 / 300; object-fit: cover;"
+          />
+          <img
+            src="/placeholder.svg"
+            width="300"
+            height="300"
+            alt="Cuisine 3"
+            class="rounded-lg shadow-lg transition-all duration-500 ease-in-out transform hover:-translate-y-2 hover:scale-105"
+            style="aspect-ratio: 300 / 300; object-fit: cover;"
+          />
+          <img
+            src="/placeholder.svg"
+            width="300"
+            height="300"
+            alt="Chambre 3"
+            class="rounded-lg shadow-lg transition-all duration-500 ease-in-out transform hover:-translate-y-2 hover:scale-105"
+            style="aspect-ratio: 300 / 300; object-fit: cover;"
+          />
+          <img
+            src="/placeholder.svg"
+            width="300"
+            height="300"
+            alt="Salle de bain 3"
+            class="rounded-lg shadow-lg transition-all duration-500 ease-in-out transform hover:-translate-y-2 hover:scale-105"
+            style="aspect-ratio: 300 / 300; object-fit: cover;"
+          />
+          <img
+            src="/placeholder.svg"
+            width="300"
+            height="300"
+            alt="Salon 4"
+            class="rounded-lg shadow-lg transition-all duration-500 ease-in-out transform hover:-translate-y-2 hover:scale-105"
+            style="aspect-ratio: 300 / 300; object-fit: cover;"
+          />
+          <img
+            src="/placeholder.svg"
+            width="300"
+            height="300"
+            alt="Cuisine 4"
+            class="rounded-lg shadow-lg transition-all duration-500 ease-in-out transform hover:-translate-y-2 hover:scale-105"
+            style="aspect-ratio: 300 / 300; object-fit: cover;"
+          />
+          <img
+            src="/placeholder.svg"
+            width="300"
+            height="300"
+            alt="Chambre 4"
+            class="rounded-lg shadow-lg transition-all duration-500 ease-in-out transform hover:-translate-y-2 hover:scale-105"
+            style="aspect-ratio: 300 / 300; object-fit: cover;"
+          />
+          <img
+            src="/placeholder.svg"
+            width="300"
+            height="300"
+            alt="Salle de bain 4"
+            class="rounded-lg shadow-lg transition-all duration-500 ease-in-out transform hover:-translate-y-2 hover:scale-105"
+            style="aspect-ratio: 300 / 300; object-fit: cover;"
+          />
+          <img
+            src="/placeholder.svg"
+            width="300"
+            height="300"
+            alt="Salon 5"
+            class="rounded-lg shadow-lg transition-all duration-500 ease-in-out transform hover:-translate-y-2 hover:scale-105"
+            style="aspect-ratio: 300 / 300; object-fit: cover;"
+          />
+          <img
+            src="/placeholder.svg"
+            width="300"
+            height="300"
+            alt="Cuisine 5"
+            class="rounded-lg shadow-lg transition-all duration-500 ease-in-out transform hover:-translate-y-2 hover:scale-105"
+            style="aspect-ratio: 300 / 300; object-fit: cover;"
+          />
+          <img
+            src="/placeholder.svg"
+            width="300"
+            height="300"
+            alt="Chambre 5"
+            class="rounded-lg shadow-lg transition-all duration-500 ease-in-out transform hover:-translate-y-2 hover:scale-105"
+            style="aspect-ratio: 300 / 300; object-fit: cover;"
+          />
+          <img
+            src="/placeholder.svg"
+            width="300"
+            height="300"
+            alt="Salle de bain 5"
+            class="rounded-lg shadow-lg transition-all duration-500 ease-in-out transform hover:-translate-y-2 hover:scale-105"
+            style="aspect-ratio: 300 / 300; object-fit: cover;"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="services" class="py-20">
+      <div class="container mx-auto px-6">
+        <div class="text-center space-y-4 mb-12">
+          <h2 class="text-3xl font-bold text-[#2C3E50]">Nos services</h2>
+          <p class="text-gray-500 text-lg">
+            Découvrez comment nous pouvons vous aider à réaliser vos projets de construction.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div class="bg-white rounded-lg shadow-lg p-6 transition-transform hover:-translate-y-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="h-12 w-12 text-[#2C3E50] mb-4"
+            >
+              <path d="m15 12-8.373 8.373a1 1 0 1 1-3-3L12 9"></path>
+              <path d="m18 15 4-4"></path>
+              <path d="m21.5 11.5-1.914-1.914A2 2 0 0 1 19 8.172V7l-2.26-2.26a6 6 0 0 0-4.202-1.756L9 2.96l.92.82A6.18 6.18 0 0 1 12 8.4V10l2 2h1.172a2 2 0 0 1 1.414.586L18.5 14.5"></path>
+            </svg>
+            <h3 class="text-xl font-bold text-[#2C3E50] mb-2">Construction</h3>
+            <p class="text-gray-500">
+              Nos équipes expérimentées se chargent de tous les aspects de la construction, de la planification à la
+              réalisation.
+            </p>
+          </div>
+          <div class="bg-white rounded-lg shadow-lg p-6 transition-transform hover:-translate-y-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="h-12 w-12 text-[#2C3E50] mb-4"
+            >
+              <path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path>
+            </svg>
+            <h3 class="text-xl font-bold text-[#2C3E50] mb-2">Rénovation</h3>
+            <p class="text-gray-500">
+              Nous transformons vos espaces existants en les modernisant tout en préservant leur caractère unique.
+            </p>
+          </div>
+          <div class="bg-white rounded-lg shadow-lg p-6 transition-transform hover:-translate-y-2">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              class="h-12 w-12 text-[#2C3E50] mb-4"
+            >
+              <rect width="8" height="4" x="8" y="2" rx="1" ry="1"></rect>
+              <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"></path>
+            </svg>
+            <h3 class="text-xl font-bold text-[#2C3E50] mb-2">Conception</h3>
+            <p class="text-gray-500">
+              Nos architectes et designers créent des plans sur-mesure pour donner vie à vos idées les plus
+              ambitieuses.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="about" class="bg-gray-100 py-20">
+      <div class="container mx-auto px-6">
+        <div class="text-center space-y-4 mb-12">
+          <h2 class="text-3xl font-bold text-[#2C3E50]">À propos</h2>
+          <p class="text-gray-500 text-lg">
+            Découvrez ce que nos clients disent de leur expérience avec Acme Construction.
+          </p>
+        </div>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          <div class="bg-white rounded-lg shadow-lg p-6 transition-transform hover:-translate-y-2">
+            <div class="flex items-center mb-4">
+              <span class="relative flex h-10 w-10 shrink-0 overflow-hidden rounded-full">
+                <span class="flex h-full w-full items-center justify-center rounded-full bg-muted">JD</span>
+              </span>
+              <div class="ml-4">
+                <h4 class="text-lg font-bold text-[#2C3E50]">John Doe</h4>
+                <p class="text-gray-500">Propriétaire, Acme Inc.</p>
+              </div>
+            </div>
+            <p class="text-gray-500">
+              "L'équipe d'Acme Construction a fait un travail exceptionnel sur notre nouveau siège social. Ils ont su
+              comprendre notre vision et la concrétiser avec professionnalisme."
+            </p>
+          </div>
+          <div class="bg-white rounded-lg shadow-lg p-6 transition-transform hover:-translate-y-2">
+            <div class="flex items-center mb-4">
+              <span class="relative flex h-10 w-10 shrink-0 overflow-hidden rounded-full">
+                <span class="flex h-full w-full items-center justify-center rounded-full bg-muted">SM</span>
+              </span>
+              <div class="ml-4">
+                <h4 class="text-lg font-bold text-[#2C3E50]">Sarah Miller</h4>
+                <p class="text-gray-500">Directrice, Entreprise XYZ</p>
+              </div>
+            </div>
+            <p class="text-gray-500">
+              "Nous avons été impressionnés par la qualité du travail d'Acme Construction. Ils ont su respecter nos
+              délais et notre budget tout en dépassant nos attentes."
+            </p>
+          </div>
+          <div class="bg-white rounded-lg shadow-lg p-6 transition-transform hover:-translate-y-2">
+            <div class="flex items-center mb-4">
+              <span class="relative flex h-10 w-10 shrink-0 overflow-hidden rounded-full">
+                <span class="flex h-full w-full items-center justify-center rounded-full bg-muted">TW</span>
+              </span>
+              <div class="ml-4">
+                <h4 class="text-lg font-bold text-[#2C3E50]">Tom Wilson</h4>
+                <p class="text-gray-500">Propriétaire, Maison Moderne</p>
+              </div>
+            </div>
+            <p class="text-gray-500">
+              "Acme Construction a transformé notre maison en un véritable chef-d'œuvre. Leur attention aux détails et
+              leur souci du service client sont remarquables."
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact" class="py-20">
+      <div class="container mx-auto px-6">
+        <div class="text-center space-y-4 mb-12">
+          <h2 class="text-3xl font-bold text-[#2C3E50]">Contactez-nous</h2>
+          <p class="text-gray-500 text-lg">Remplissez le formulaire ci-dessous pour discuter de votre projet.</p>
+  
+        </div>
+        <form class="max-w-xl mx-auto space-y-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+              <div>
+                <label
+                  class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                  for="name"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="mr-2 h-5 w-5"
+                  >
+                    <path d="M19 21v-2a4 4 0 0 0-4-4H9a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                  </svg>
+                  Nom
+                </label>
+                <input
+                  class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                  id="name"
+                  placeholder="Entrez votre nom"
+                  type="text"
+                />
+              </div>
+              <div>
+                <label
+                  class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                  for="email"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="mr-2 h-5 w-5"
+                  >
+                    <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                  </svg>
+                  Email
+                </label>
+                <input
+                  class="flex h-10 w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                  id="email"
+                  placeholder="Entrez votre email"
+                  type="email"
+                />
+              </div>
+            </div>
+            <div>
+              <label
+                class="text-sm font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+                for="message"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="mr-2 h-5 w-5"
+                >
+                  <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path>
+                </svg>
+                Message
+              </label>
+              <textarea
+                class="flex min-h-[80px] w-full rounded-md border border-input bg-background px-3 py-2 text-sm ring-offset-background placeholder:text-muted-foreground focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50"
+                id="message"
+                rows="5"
+                placeholder="Entrez votre message"
+              ></textarea>
+            </div>
+            <div class="flex justify-end">
+              <button
+                class="inline-flex items-center justify-center whitespace-nowrap rounded-md text-sm font-medium ring-offset-background transition-colors focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 h-10 px-4 py-2 bg-[#2C3E50] hover:bg-[#2C3E50]/80 text-white"
+                type="submit"
+              >
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="mr-2 h-5 w-5"
+                >
+                  <path d="m22 2-7 20-4-9-9-4Z"></path>
+                  <path d="M22 2 11 13"></path>
+                </svg>
+                Envoyer
+              </button>
+            </div>
+          </form>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-[#2C3E50] text-white py-6 mt-12">
+    <div class="max-w-xl mx-auto flex justify-between items-center pt-6">
+      <div class="space-x-4 flex">
+        <a class="hover:underline" href="#">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="mr-2 h-5 w-5"
+          >
+            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+          </svg>
+          Facebook
+        </a>
+        <a class="hover:underline" href="#">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="mr-2 h-5 w-5"
+          >
+            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+            <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+          </svg>
+          Instagram
+        </a>
+        <a class="hover:underline" href="#">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="24"
+            height="24"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            class="mr-2 h-5 w-5"
+          >
+            <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+            <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+          </svg>
+          Email
+        </a>
+      </div>
+      <p class="text-sm">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="24"
+          height="24"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          class="mr-2 h-5 w-5"
+        >
+          <circle cx="12" cy="12" r="10"></circle>
+          <path d="M14.83 14.83a4 4 0 1 1 0-5.66"></path>
+        </svg>
+        2024 Acme Inc.
+      </p>
+    </div>
+  </footer>
+</body>
+</html>
