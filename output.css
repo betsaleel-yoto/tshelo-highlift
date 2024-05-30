@@ -815,6 +815,14 @@ video {
   border-width: 1px;
 }
 
+.border-b-2 {
+  border-bottom-width: 2px;
+}
+
+.border-transparent {
+  border-color: transparent;
+}
+
 .bg-\[\#2C3E50\] {
   --tw-bg-opacity: 1;
   background-color: rgb(44 62 80 / var(--tw-bg-opacity));
@@ -857,6 +865,10 @@ video {
 
 .p-6 {
   padding: 1.5rem;
+}
+
+.p-\[7px\] {
+  padding: 7px;
 }
 
 .px-3 {
@@ -1038,6 +1050,11 @@ video {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.hover\:border-\[\#FFD700\]:hover {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 215 0 / var(--tw-border-opacity));
+}
+
 .hover\:bg-\[\#2C3E50\]\/80:hover {
   background-color: rgb(44 62 80 / 0.8);
 }
@@ -1073,6 +1090,11 @@ video {
 
 .focus-visible\:ring-offset-2:focus-visible {
   --tw-ring-offset-width: 2px;
+}
+
+.active\:border-\[\#FFD700\]:active {
+  --tw-border-opacity: 1;
+  border-color: rgb(255 215 0 / var(--tw-border-opacity));
 }
 
 .disabled\:pointer-events-none:disabled {
@@ -1163,6 +1185,11 @@ video {
     padding-bottom: 5rem;
   }
 
+  .md\:py-6 {
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+  }
+
   .md\:text-2xl {
     font-size: 1.5rem;
     line-height: 2rem;
@@ -1214,6 +1241,11 @@ video {
   .lg\:py-24 {
     padding-top: 6rem;
     padding-bottom: 6rem;
+  }
+
+  .lg\:py-8 {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
   }
 
   .lg\:text-2xl {
