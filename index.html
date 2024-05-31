@@ -33,20 +33,20 @@
         <span class="text-xl font-bold text-[#2C3E50]">Acme Construction</span>
       </a>
       <nav class="hidden md:flex items-center space-x-6">
-        <a href="index.html" class="text-[#2C3E50] hover:text-gray-600 transition-colors border-b-2 border-transparent hover:border-[#FFD700] active:border-[#FFD700] nav-link rounded-md p-[7px]" data-page="index">
+        <a href="index.html" class="text-[#2C3E50] hover:text-gray-600 transition-colors border-b-2 border-transparent hover:border-[#FFD700] active:border-[#FFD700] nav-link rounded-md p-[7px] font-semibold" data-page="index">
           Accueil
         </a>
-        <a href="./services.html" class="text-[#2C3E50] hover:text-gray-600 transition-colors border-b-2 border-transparent hover:border-[#FFD700] active:border-[#FFD700] nav-link rounded-md p-[7px]" data-page="services">
+        <a href="./services.html" class="text-[#2C3E50] hover:text-gray-600 transition-colors border-b-2 border-transparent hover:border-[#FFD700] active:border-[#FFD700] nav-link rounded-md p-[7px] font-semibold" data-page="services">
           Services
         </a>
-        <a href="./apropos.html" class="text-[#2C3E50] hover:text-gray-600 transition-colors border-b-2 border-transparent hover:border-[#FFD700] active:border-[#FFD700] nav-link rounded-md p-[7px]" data-page="apropos">
+        <a href="./apropos.html" class="text-[#2C3E50] hover:text-gray-600 transition-colors border-b-2 border-transparent hover:border-[#FFD700] active:border-[#FFD700] nav-link rounded-md p-[7px] font-semibold" data-page="apropos">
           À propos
         </a>
-        <a href="./contact.html" class="text-[#2C3E50] hover:text-gray-600 transition-colors border-b-2 border-transparent hover:border-[#FFD700] active:border-[#FFD700] nav-link rounded-md p-[7px]" data-page="contact">
+        <a href="./contact.html" class="text-[#2C3E50] hover:text-gray-600 transition-colors border-b-2 border-transparent hover:border-[#FFD700] active:border-[#FFD700] nav-link rounded-md p-[7px] font-semibold" data-page="contact">
           Contact
         </a>
       </nav>
-      <button class="md:hidden bg-gray-100 hover:bg-gray-200 text-[#2C3E50] rounded-md p-2 transition-colors">
+      <button id="menu-toggle" class="md:hidden bg-gray-100 hover:bg-gray-200 text-[#2C3E50] rounded-md p-2 transition-colors">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="24"
@@ -617,6 +617,43 @@
                 link.classList.add('bg-[#FFD700]');
             }
         });
+    });
+
+
+
+    document.getElementById('menu-toggle').addEventListener('click', function() {
+        // Sélectionner la navigation
+        const nav = document.querySelector('nav');
+        
+        // Basculer la visibilité de la navigation
+        nav.classList.toggle('hidden');
+
+        // Si la navigation est visible, ajuster la mise en page des éléments
+        if (!nav.classList.contains('hidden')) {
+            // Ajouter les classes de flexbox pour afficher les éléments en colonne
+            nav.classList.add('flex', 'flex-col', 'items-center', 'space-y-4', 'absolute', 'inset-y-0', 'right-0', 'bg-white', 'p-4');
+            // Définir la largeur de la navigation à 80% de la largeur de l'écran
+            nav.style.width = '80vw';
+
+            // Récupérer tous les liens de navigation
+            const navLinks = document.querySelectorAll('.nav-link');
+
+            // Ajuster la largeur des liens à 100% de la largeur de la navigation
+            navLinks.forEach(link => {
+                link.style.width = '100%';
+            });
+        } else {
+            // Retirer les classes ajoutées pour réinitialiser la mise en page
+            nav.classList.remove('flex', 'flex-col', 'items-center', 'space-y-4', 'absolute', 'inset-y-0', 'right-0', 'bg-white', 'p-4');
+            // Réinitialiser la largeur de la navigation
+            nav.style.width = '';
+
+            // Réinitialiser la largeur des liens
+            const navLinks = document.querySelectorAll('.nav-link');
+            navLinks.forEach(link => {
+                link.style.width = '';
+            });
+        }
     });
 </script>
 
